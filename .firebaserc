@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "simplytutor-2f4a0"
+  },
+  "targets": {
+    "simplytutor-2f4a0": {
+      "hosting": {
+        "simplytutorapp": [
+          "simplytutor-2f4a0"
+        ]
+      }
+    }
+  }
+}
