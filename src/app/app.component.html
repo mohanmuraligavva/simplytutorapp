@@ -6,4 +6,8 @@
 <!-- firebase deploy -->
 <h2>Gurubyo Namaha!! By Mohan</h2>
 <h2>list of users</h2>
-<div *ngFor="let user of users"><span  class="user-name">{{user.username}}</span></div>
+
+
+<input type="text" [(ngModel)]="user.userName" />
+<input type="password" [(ngModel)]="user.password"/>
+<button (click)="login()" >Login</button>

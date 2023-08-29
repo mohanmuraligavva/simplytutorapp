@@ -7,6 +7,7 @@ import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
 import { provideAuth,getAuth } from '@angular/fire/auth';
 import { provideFirestore,getFirestore } from '@angular/fire/firestore';
+import { FormsModule } from '@angular/forms';
 const firebaseConfig = {
   apiKey: "AIzaSyBTEHxVvQ3LmoFSCpsmAKRV4AgvOhYfwBE",
   authDomain: "simplytutor-2f4a0.firebaseapp.com",
@@ -25,7 +26,8 @@ const firebaseConfig = {
     AppRoutingModule,
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideAuth(() => getAuth()),
-    provideFirestore(() => getFirestore())
+    provideFirestore(() => getFirestore()),
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
